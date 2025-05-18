@@ -1,43 +1,86 @@
-# Getting Started with Create React App
+# Quotes Machine by Goner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A dynamic and visually appealing Random Quote Machine built with React, fully compliant with the [FreeCodeCamp Front End Libraries Project](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine). This project features smooth animations, modern design, and a robust test suite.
 
-## Available Scripts
+## Demo
 
-In the project directory, you can run:
+Try the original challenge: [FreeCodeCamp Random Quote Machine](https://random-quote-machine.freecodecamp.rocks/)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Responsive, modern UI with custom fade-in/fade-out animations for quotes
+- Fetches and displays random quotes from a curated list
+- Tweet the current quote with one click
+- All FreeCodeCamp user stories satisfied
+- Fully tested with React Testing Library
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## User Stories (Requirements)
 
-### `npm test`
+1. I can see a wrapper element with a corresponding `id="quote-box"`.
+2. Within `#quote-box`, I can see an element with `id="text"`.
+3. Within `#quote-box`, I can see an element with `id="author"`.
+4. Within `#quote-box`, I can see a clickable element with `id="new-quote"`.
+5. Within `#quote-box`, I can see a clickable `a` element with `id="tweet-quote"`.
+6. On first load, a random quote and author are displayed.
+7. Clicking `#new-quote` fetches and displays a new quote and author.
+8. The `#tweet-quote` link opens a tweet intent with the current quote.
+9. The `#quote-box` is horizontally centered and visually appealing.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
+- Node.js (v16 or later recommended)
+- npm
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Running the App
+```bash
+npm start
+```
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Running Tests
+```bash
+npm test -- --watchAll=false
+```
+All tests should pass, including animation-related behaviors.
 
-### `npm run eject`
+### Building for Production
+```bash
+npm run build
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Deployment
+You can deploy the contents of the `build` folder to any static hosting provider (e.g., Netlify, Vercel, GitHub Pages, etc).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Structure
+```
+quotes-machine/
+├── public/
+│   └── index.html
+├── src/
+│   ├── App.js        # Main React component
+│   ├── App.css       # App styling & animations
+│   ├── quotes.js     # Quotes data
+│   ├── App.test.js   # Test suite
+│   └── ...
+└── README.md         # Project documentation
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Animation Details
+- Quotes and authors fade out and in smoothly when a new quote is shown.
+- Animations are implemented with CSS transitions and React state.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Credits
+- Quotes sourced from public domain and famous authors.
+- Built by [Goner](https://github.com/thegoner24) for the FreeCodeCamp curriculum.
+
+## License
+This project is open source and available under the MIT License.
 
 ## Learn More
 
